@@ -1,21 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamza Web Page</title>
+    <link rel="stylesheet" href="hamza.css">
+
 </head>
+
 <body>
+
+
+    <header class="container">
+
+        <nav>
+
+            <div class="logo">
+                <a href="#">HAMZA</a>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section class="text">
+        <h1 class="welcome">Welcome. Are you ready to explore our company?</h1>
+        <p>Our company aims to become the industry leader in its field and is making great strides toward this goal. We
+            are looking for people to join us on this journey as we move forward with confidence and determination.</p>
+        <h2 class="joinus">Join Us:</h2>
+    </section>
+
 
     <form action="">
         <div>
             <label for="firstName">First Name:</label>
-            <input type="text" name="firstName" id="firstName" placeholder="Hamza" required>
+            <input type="text" name="firstName" id="firstName" required>
         </div>
 
         <div>
             <label for="lastName">Last Name:</label>
-            <input type="text" name="lastName" id="lastName" placeholder="Gunes">
+            <input type="text" name="lastName" id="lastName">
         </div>
 
         <div>
@@ -34,30 +67,18 @@
         </div>
 
         <div>
-            <label for="date">Date:</label>
-            <input type="date" name="date" id="date">
+            <label for="date"> Birthday:</label>
+            <input type="date" name="date" id="date" style=" color: gray ">
         </div>
 
         <div>
-            <label for="age">Age:</label>
-            <input type="number" name="age" id="age" placeholder="18" min="0" max="200">
-        </div>
+            <label for="gender" style="margin-right: 8px;">Gender:</label>
 
-        <div>
-            <label for="gender">Gender:</label>
             <label for="male">Male:</label>
             <input type="radio" name="gender" id="male" value="male">
+
             <label for="female">Female:</label>
             <input type="radio" name="gender" id="female" value="female">
-        </div>
-
-        <div>
-            <label for="gender2">Gender:</label>
-            <select name="gender2" id="gender2">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="specify">I don't want to specify</option>
-            </select>
         </div>
 
         <div>
@@ -66,20 +87,11 @@
         </div>
 
         <div>
-            <label for="comment">Comment:</label>
-            <textarea name="comment" id="comment" cols="30" rows="4"></textarea>
-        </div>
-
-        <div>
-            <label for="file">File:</label>
-            <input type="file" name="file" id="file" accept=".pdf">
-        </div>
-
-        <div>
-            <input type="reset" value="Reset">
-            <input type="submit" value="Submit">
+            <input type="reset" value="Reset" style="color: gray;">
+            <input type="submit" value="Submit" style="color: gray;">
         </div>
     </form>
-    
+
 </body>
+
 </html>
